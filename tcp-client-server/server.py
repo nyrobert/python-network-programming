@@ -14,7 +14,7 @@ print(f"Connected: {client_address}")
 data = client_socket.recv(1024)
 print(f"Message: {data.decode()}")
 
-client_socket.send(b"Hello client!")
+client_socket.send(b"Hello, client!")
 
 client_socket.close()
 server_socket.close()
