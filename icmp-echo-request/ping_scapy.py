@@ -1,3 +1,12 @@
+"""
+To run this script, you need to execute it with root privileges.
+
+The requirement for root privileges when dealing with raw sockets and ICMP packets is
+primarily a security measure imposed by operating systems to prevent potential
+misuse and ensure network security and stability.
+"""
+
+
 import argparse
 from scapy.all import *
 
