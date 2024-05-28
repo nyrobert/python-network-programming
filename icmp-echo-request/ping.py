@@ -95,10 +95,10 @@ def main():
     parser.add_argument("-c", "--count", type=int, default=4, help="Number of echo requests to send")
 
     args = parser.parse_args()
-    dest_addr = socket.gethostbyname(args.destination)
+    destination = socket.gethostbyname(args.destination)
 
-    print(f"Pinging {dest_addr} with {args.count} packets:")
-    ping(dest_addr, args.timeout, args.count)
+    print(f"Pinging {destination} with {args.count} packets:")
+    ping(destination, args.timeout, args.count)
 
 if __name__ == "__main__":
     main()
